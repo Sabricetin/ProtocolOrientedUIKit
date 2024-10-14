@@ -36,6 +36,8 @@ class UserViewController: UIViewController {
         // Do any additional setup after loading the view.
 
         setupViews()
+        fetchUsers()
+        
     }
     private func setupViews() {
         
@@ -75,6 +77,17 @@ class UserViewController: UIViewController {
 
     }
 
-
+    private func fetchUsers() {
+        APIManager.shared.fetcUser { result in
+            switch result {
+            case .success(let user):
+                self.usernameLabel.text = user.username
+                self.emailLabel.text = user.email
+                self.nameLabel.text = user.username
+            case .failure(_):
+                self.nameLabel.text = "No user found"
+            }
+        }
+    }
 }
 
