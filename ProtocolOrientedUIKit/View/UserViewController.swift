@@ -9,6 +9,8 @@ import UIKit
 
 class UserViewController: UIViewController {
 
+    private let  viewModel : UserViewModel
+    
     private let nameLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -30,13 +32,23 @@ class UserViewController: UIViewController {
         return label
         
     } ()
+
+    init(viewModel: UserViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
         setupViews()
-        fetchUsers()
+     // fetchUsers()
         
     }
     private func setupViews() {
@@ -76,7 +88,7 @@ class UserViewController: UIViewController {
         usernameLabel.textColor = .red
 
     }
-
+/*
     private func fetchUsers() {
         APIManager.shared.fetcUser { result in
             switch result {
@@ -88,6 +100,6 @@ class UserViewController: UIViewController {
                 self.nameLabel.text = "No user found"
             }
         }
-    }
+    } */
 }
 

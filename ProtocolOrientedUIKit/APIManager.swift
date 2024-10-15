@@ -7,9 +7,11 @@
 
 import Foundation
 
-class APIManager {
+class APIManager : UserService {
+    /*
     static let shared = APIManager()
     private init () {}
+     */
     
     func fetcUser (completion : @escaping(Result<User,Error>) -> Void ) {
         let url = URL(string: "https://jsonplaceholder.typicode.com/users")!
