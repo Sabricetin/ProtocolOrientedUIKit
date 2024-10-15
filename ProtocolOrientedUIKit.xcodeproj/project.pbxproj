@@ -93,21 +93,21 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		1E87D87E2CBF1252009379CB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1ECE57AE2CBD587800963F6A /* APIManager.swift */,
+				1E1D220A2CBEB006008BC200 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		1ECE57AB2CBD582400963F6A /* View */ = {
 			isa = PBXGroup;
 			children = (
 				1EF09BA72CBC666D0021DD55 /* UserViewController.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		1ECE57AC2CBD583100963F6A /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				1ECE57AE2CBD587800963F6A /* APIManager.swift */,
-				1E1D220A2CBEB006008BC200 /* UserService.swift */,
-			);
-			name = Service;
 			sourceTree = "<group>";
 		};
 		1ECE57AD2CBD584100963F6A /* Model */ = {
@@ -141,9 +141,9 @@
 		1EF09BA22CBC666D0021DD55 /* ProtocolOrientedUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				1E87D87E2CBF1252009379CB /* Service */,
 				1E1D22072CBEAF58008BC200 /* ViewModel */,
 				1ECE57AD2CBD584100963F6A /* Model */,
-				1ECE57AC2CBD583100963F6A /* Service */,
 				1ECE57AB2CBD582400963F6A /* View */,
 				1EF09BA32CBC666D0021DD55 /* AppDelegate.swift */,
 				1EF09BA52CBC666D0021DD55 /* SceneDelegate.swift */,
