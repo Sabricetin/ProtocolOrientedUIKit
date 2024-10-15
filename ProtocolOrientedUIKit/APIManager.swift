@@ -19,7 +19,7 @@ class APIManager : UserService {
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else {return}
             DispatchQueue.main.async{
-                if let user = try? JSONDecoder().decode([User].self, from: data).first {
+                if let user = try? JSONDecoder().decode([User].self, from: data).last {
                     completion(.success(user))
                     
                 } else {

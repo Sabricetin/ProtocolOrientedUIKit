@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E1AEB8B2CBEB5B600BEF68E /* UserViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AEB8A2CBEB5B600BEF68E /* UserViewModelProtocol.swift */; };
 		1E1D22092CBEAF73008BC200 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1D22082CBEAF73008BC200 /* UserViewModel.swift */; };
 		1E1D220B2CBEB006008BC200 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1D220A2CBEB006008BC200 /* UserService.swift */; };
 		1ECE57AF2CBD587800963F6A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE57AE2CBD587800963F6A /* APIManager.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E1AEB8A2CBEB5B600BEF68E /* UserViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelProtocol.swift; sourceTree = "<group>"; };
 		1E1D22082CBEAF73008BC200 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		1E1D220A2CBEB006008BC200 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		1ECE57AE2CBD587800963F6A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				1E1D22082CBEAF73008BC200 /* UserViewModel.swift */,
+				1E1AEB8A2CBEB5B600BEF68E /* UserViewModelProtocol.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				1E1D220B2CBEB006008BC200 /* UserService.swift in Sources */,
 				1ECE57AF2CBD587800963F6A /* APIManager.swift in Sources */,
 				1E1D22092CBEAF73008BC200 /* UserViewModel.swift in Sources */,
+				1E1AEB8B2CBEB5B600BEF68E /* UserViewModelProtocol.swift in Sources */,
 				1EF09BA82CBC666D0021DD55 /* UserViewController.swift in Sources */,
 				1EF09BA42CBC666D0021DD55 /* AppDelegate.swift in Sources */,
 				1ECE57B12CBD588500963F6A /* User.swift in Sources */,

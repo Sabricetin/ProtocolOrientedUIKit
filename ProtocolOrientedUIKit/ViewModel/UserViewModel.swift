@@ -10,6 +10,7 @@ import Foundation
 class UserViewModel {
     
     private let userService : UserService
+    weak var output : UserViewModelProtocol?
     
     init(userService: UserService) {
         self.userService = userService
@@ -17,12 +18,12 @@ class UserViewModel {
     
     func fetcUsers() {
         
-        userService.fetcUser { result in
+        userService.fetcUser { [weak self] result in
             switch result {
             case .success(let user) :
-                print(user)
+                self?.output?.updateView(name: user.name, email: user.email, userName: user.username)
             case.failure(_):
-                print("Error")
+                self?.output?.updateView(name: "No User", email: "", userName: "")
             }
         }
     }
